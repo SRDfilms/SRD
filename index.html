@@ -327,6 +327,7 @@ body {
         font-size: 2rem;
         padding: 10px;
     }
+    
 }
 
 /* Responsive adjustments for mobile phones */
@@ -367,6 +368,55 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+/* Base Styles */
+.video-section {
+    padding: 10px;
+}
+
+.video-category {
+    margin-bottom: 20px;
+}
+
+.section-heading {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.video-item {
+    flex: 1 1 calc(50% - 10px); /* Two items per row with gap */
+    box-sizing: border-box;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: auto;
+}
+
+.video-description {
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 360px) {
+    .video-item {
+        flex: 1 1 100%; /* Single item per row */
+    }
+    
+    .section-heading {
+        font-size: 1em;
+    }
+    
+    .video-grid {
+        gap: 5px;
+    }
 }
 
 
