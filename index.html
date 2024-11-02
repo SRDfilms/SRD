@@ -423,56 +423,9 @@ body {
 }
 
 
-/* Preloader overlay */
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    z-index: 9999;
-}
-
-/* Spinner animation */
-.spinner {
-    width: 60px;
-    height: 60px;
-    border: 6px solid rgba(255, 255, 255, 0.2);
-    border-top-color: #ffffff;
-    border-radius: 50%;
-    animation: spin 1s ease-in-out infinite;
-    margin-bottom: 15px;
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Loading text */
-.loading-text {
-    color: #ffffff;
-    opacity: 0.8;
-}
-
-
     </style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
-
-    <div id="preloader">
-        <div class="spinner"></div>
-        <p class="loading-text">Loading...</p>
-    </div>
     
   <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
@@ -897,15 +850,6 @@ body {
         </div> <!-- end of container -->
     </div> <!-- end of footer -->  
     <!-- end of footer -->
-<script>
-    window.addEventListener("load", function() {
-        const preloader = document.getElementById("preloader");
-        preloader.style.opacity = "0";
-        setTimeout(() => {
-            preloader.style.display = "none";
-        }, 500); // Delay to allow for a smooth fade-out effect
-    });
-</script>
 
 
     
